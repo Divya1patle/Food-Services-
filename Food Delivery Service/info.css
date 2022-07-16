@@ -1,0 +1,218 @@
+/*For Navigation Bar*/
+/* :root {
+  --unique-height: 60px;
+} */
+html {
+  scroll-behavior: smooth; /*if we want to click on home then it scrolls in home */
+}
+#unique {
+  display: flex;
+  align-items: center;
+  position: sticky; /*if we want to content is not cover whole area then we use position relative. & if want to dark nav bar then use sticky*/
+}
+
+#logo {
+  margin: -33px 24px;
+}
+#logo img {
+  height: 73px;
+  margin: 3px 8px;
+}
+#unique ul {
+  display: flex;
+}
+#unique::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: -1; /*if we use this then content will be shown*/
+  opacity: 0.3;
+}
+#unique li {
+  list-style: none; /*point remove hote*/
+  font-size: 1.5rem;
+}
+#unique ul li a {
+  display: block;
+  padding: 3px 22px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: hsl(0deg 0% 100%);
+}
+#unique ul li a:hover {
+  color: hotpink; /*text color become black*/
+  background-color: white; /*background color get white when we hover*/
+}
+
+/*Home Section */
+
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 4px 190px;
+  justify-content: center;
+  align-items: center;
+  height: 550px;
+}
+#home::before {
+  content: "";
+  position: absolute;
+  height: 660px;
+  background-image: url("https://png.pngtree.com/background/20210710/original/pngtree-hot-pot-gourmet-food-poster-picture-image_1025936.jpg");
+  /* background-size: cover; */
+  /* height: 100%; */
+  width: 200%;
+  top: 0px; /* with the help of top left we can set image*/
+  left: 0px;
+  z-index: -1;
+  opacity: 0.678;
+}
+#home h1 {
+  font-size: 2.9rem;
+  padding: -15px;
+  color: white;
+  text-align: center;
+  font-family: "Pacifico", cursive;
+}
+#home p {
+  font-size: 1.3rem;
+  padding: -20px;
+  color: white;
+  padding: -32px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.btn {
+  padding: 8px 35px;
+  border: 5px solid white;
+  background-color: brown;
+  color: white;
+  margin: 17px;
+  font-size: 1.5rem;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+/* service section */
+
+.service12 {
+  padding: -11px;
+  margin: -16px;
+  background-color: aliceblue;
+  /* text-align: center; */
+  flex-direction: column;
+  height: 650px;
+}
+.heading {
+  text-align: center;
+  border-radius: 13px;
+  margin: 10px;
+  padding: 20px;
+  font-size: 40px;
+}
+#soft {
+  margin: 34px;
+  display: flex;
+}
+.first {
+  border: 1px solid black;
+  margin: 8px;
+  padding: 23px;
+  border-radius: 29px;
+  background-color: #d2cece;
+}
+.first img {
+  height: 180px;
+  margin: auto;
+  display: block;
+}
+.skip {
+  text-align: center;
+  font-size: 30px;
+  font-family: sans-serif;
+}
+.text-center {
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/* client Section */
+
+#clients-section {
+  height: 444px;
+  margin: 24px;
+}
+#clients-section::before {
+  content: "";
+  position: absolute;
+  background-image: url("https://images.pexels.com/photos/235986/pexels-photo-235986.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  height: 344px;
+  opacity: 0.4;
+}
+#clients {
+  display: flex;
+  /* background-image: ; */
+  justify-content: center;
+  align-items: center;
+}
+.sold {
+  text-align: center;
+  font-size: 45px;
+  padding: 24px;
+}
+.clients-item {
+  padding: 35px;
+}
+.clients-item img {
+  height: 108px;
+}
+
+/* Contact section */
+
+#contact {
+  position: relative;
+}
+#contact::before {
+  content: "";
+  position: absolute;
+  background-image: url(https://c1.wallpaperflare.com/preview/551/930/440/contact-us-contact-call-us-phone-communication.jpg);
+  width: 100%;
+  height: 600px;
+  color: whitesmoke;
+  z-index: -1;
+  opacity: 0.89;
+}
+.center {
+  text-align: center;
+  font-size: 35px;
+}
+.contact-box {
+  display: flex;
+  width: 100%;
+  padding-bottom: 34px;
+  justify-content: center;
+  align-items: center;
+}
+.contact-box label {
+  font-size: 1.4rem;
+  color: #040000;
+  font-family: fantasy;
+}
+.contact-box input {
+  width: 455px;
+  height: 35px;
+  border-radius: 5px;
+}
+.col {
+  background-color: black;
+  color: aliceblue;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px 20px;
+}
